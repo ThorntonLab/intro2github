@@ -3,6 +3,8 @@ Why github is important for what we do.
 author: Kevin Thornton
 date: April 2014
 
+This talk can be found at https://github.com/ThorntonLab/intro2github
+
 Reproducible research
 ========================================================
 
