@@ -4,7 +4,7 @@ This is a terse "bootcamp" in on the use of git/github.
 
 Hint: practice with dummy repositories until you get what the commands are doing.
 
-Good links include [this](http://githowto.com/), [this](https://help.github.com/)), and [this](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Mergin).
+Good links include [this](http://githowto.com/), [this](https://help.github.com/), and [this](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Mergin).
 
 #An aside: best practices
 
@@ -261,3 +261,28 @@ On a remote repo (your server, github, etc.):
 git push origin :branchname
 ```
 
+#Creating a specific version number for the current version of your master branch.
+
+OK, you've done some nice work,  and you want this to be a release with a specific version number.  In git-land, you "tag" the current branch:
+
+```
+git tag 0.1.0 -m "Something about why this is a release"
+```
+
+You can then send the release to github:
+
+```
+git push origin 0.1.0
+```
+
+Once you've pushed the tag, another user can download reponame-0.1.0.tar.gz from the "Releases" tab at your repo's github URL.
+
+##When to tag?
+
+These are rules that I personally use:
+
+* If the code was used in a publication, then you absolutely should create a tag for the version that you used in the paper.  The goal is reproducibility, and that includes any bugs that may be present in the version you used in your paper.  (Bugs are fine, and a fact of life.  You'll get more credit for acknowledging a bug while still allowing the erroneous results to be replicated as opposed to not making your scripts/programs/command lines available at all.)
+* If a new feature was added, I often create a tag.
+* If a bug was fixed, I often create a tag.
+
+Sometimes, though, you are making additions to the master branch that are unremarkable.  For example, I may make code a bit faster, simpler, or better-commented.  I usually just leave that in "master" because the _output_ that a user would see from running the code would be the same.  Eventually, master may evolve enough so that the code is quite different from the latest release, but I try to restrict myself to the tagging scenarios described above.
