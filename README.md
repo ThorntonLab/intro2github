@@ -285,4 +285,14 @@ These are rules that I personally use:
 * If a new feature was added, I often create a tag.
 * If a bug was fixed, I often create a tag.
 
-Sometimes, though, you are making additions to the master branch that are unremarkable.  For example, I may make code a bit faster, simpler, or better-commented.  I usually just leave that in "master" because the _output_ that a user would see from running the code would be the same.  Eventually, master may evolve enough so that the code is quite different from the latest release, but I try to restrict myself to the tagging scenarios described above.
+Sometimes, though, you are making additions to the master branch that are unremarkable.  For example, I may make code a bit faster, simpler, or better-commented.  I usually just leave that in "master" because the _output_ that a user would see from running the code would be the same.  Eventually, master may evolve enough so that the code is quite different from the latest release, but I try to restrict myself to the tagging scenarios described above.  Sometimes, though, I forget to tag, which is why I wrote "often" in the above list.
+
+#Modifying someone else's repository
+
+Say you want to work with someone else's code that is on github.  For example, you may have identified a bug and you know how to fix it.  This is what you do:
+
+* Go to their git repo URL and "fork" the repo.  (Upper right gray-ish button that says "Fork").  This means you now have a copy of this repo in your github account!
+* Clone __your__ copy of the repo to wherever you like to do your actual work.
+* Make changes, commit them, and push them back to your repo
+* If you think the original author would be interested in your changes, submit a "pull request".  You'll see the "Pull request" button in the gray bar above the list of files in the repo.  The author will get a notification from github about your request, and will be able to see all of your changes and review them.  The author may approve changes and integrate them into the original repo or reject them at his/her discretion.
+
