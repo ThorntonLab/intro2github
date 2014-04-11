@@ -51,7 +51,7 @@ __This solves a lot of the problems that you are probably currently having__
 
 What problems do you have?
 ===
-- file.py, file2.py, file2_bugfix.pl, file2_bugfix2.py.  Which of these is the right one?
+- file.py, file2.py, file2_bugfix.py, file2_bugfix2.py.  Which of these is the right one?
 - Your HPC workflows have a zillion shell scripts all over the place, right?
 - You have trouble finding examples of things that you have done before.
 - You lost your notes on how to compile some critical tool that you use, or how to load a module on HPC, etc.
