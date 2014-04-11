@@ -102,6 +102,16 @@ Really, it should be a Unix workstation (Linux and OS X installations will typic
 
 It should __NOT__ be HPC.  Rather you should be __cloning__ to HPC from your server, and __pushing__ changes/bugfixes bac to your server from HPC.
 
+Synology boxes
+===
+
+Check out this company: http://www.synology.com/
+* Lighweight linux machine with an web interface for configuration
+* Basically a minimal way to set up a RAID server
+* Has capability of being a git server for your lab
+* Emerson/Long/Thornton bought one together but have been too preoccupied to figure out how to set up the git features
+* (Can also be your music/video/photo server at home, Time Machine device, etc.)
+
 Helpful links
 ===
 [Github "Help"](https://help.github.com/) -- See the "Bootcamp" section
