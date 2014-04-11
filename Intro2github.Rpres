@@ -49,6 +49,16 @@ Uses:
 
 __This solves a lot of the problems that you are probably currently having__
 
+Lab "Notebooks"
+===
+- [Rstudio](http://www.rstudio.com/)
+- "R Markdown" generates html output automagically
+- File -> New File -> R Markdown
+- Keep plain-text output files in a git repo
+- Use the R Markdown file to process your results
+- You have an up-do-date web page telling you what state your project is in
+- Keep it all in a git repo for version control
+
 What problems do you have?
 ===
 - file.py, file2.py, file2_bugfix.py, file2_bugfix2.py.  Which of these is the right one?
