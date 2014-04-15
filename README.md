@@ -6,6 +6,8 @@ Hint: practice with dummy repositories until you get what the commands are doing
 
 Good links include [this](http://githowto.com/), [this](https://help.github.com/), and [this](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Mergin).
 
+A "cheat sheet" on some advanced features is [here](https://github.com/tiimgreen/github-cheat-sheet)
+
 #An aside: best practices
 
 To maximize safety of your projects, I __strongly__ suggest the following behavior:
