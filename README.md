@@ -6,7 +6,9 @@ Hint: practice with dummy repositories until you get what the commands are doing
 
 Good links include [this](http://githowto.com/), [this](https://help.github.com/), and [this](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Mergin).
 
-A "cheat sheet" on some advanced features is [here](https://github.com/tiimgreen/github-cheat-sheet)
+A "cheat sheet" on some advanced features is [here](https://github.com/tiimgreen/github-cheat-sheet).
+
+[This] is an excellent reference on advanced git usage.
 
 #An aside: best practices
 
