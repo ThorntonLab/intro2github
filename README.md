@@ -1,4 +1,4 @@
-#The very basics
+# The very basics
 
 This is a terse "bootcamp" in on the use of git/github.
 
@@ -10,7 +10,7 @@ A "cheat sheet" on some advanced features is [here](https://github.com/tiimgreen
 
 [This] is an excellent reference on advanced git usage.
 
-#An aside: best practices
+# An aside: best practices
 
 To maximize safety of your projects, I __strongly__ suggest the following behavior:
 
@@ -19,7 +19,7 @@ To maximize safety of your projects, I __strongly__ suggest the following behavi
 <li>You keep all projects you care about in ~/git on that server</li>
 <li>You __NEVER__ do __ANY__ editing of code in those repos.  Rather, you always work on a _copy_ of a repo.  This is less convenient, but more idiot-proof.</li>
 </ol>
-#Creating a repository on github
+# Creating a repository on github
 
 From your account (github.com/username):
 
