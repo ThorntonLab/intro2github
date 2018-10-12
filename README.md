@@ -46,7 +46,7 @@ and this, which is how to connect an existing repo to github:
 
 The above two blocks are recipes.
 
-#Creating a repo on your own machine
+# Creating a repo on your own machine
 
 ```
 mkdir reponame.git
@@ -56,7 +56,7 @@ git init
 
 That's all--you now have an empty repo!
 
-##Connecting your new repo to github
+## Connecting your new repo to github
 
 ```
 git remote add https://github.com/username/reponame.git
@@ -66,7 +66,7 @@ Now, the "master" branch of your repo thinks that it originated from your github
 
 #"Cloning" a repo
 
-##From your server
+## From your server
 To work on a copy of a repo, you "clone" it.  I assume that you have an account on some Unix machine somewhere at your institutions.  For simplicity, we'll assume that you are at UCI.
 
 To clone a repo from your UCI server:
@@ -83,7 +83,7 @@ This command spits out a bunch of stuff relating to files getting copied over.  
 
 __NOTE:__ you cannot get libsequence from that server because you don't have access to my account on my server.
 
-##From github
+## From github
 
 You can, however, get a libsequence from my github account by saying
 
@@ -91,10 +91,10 @@ You can, however, get a libsequence from my github account by saying
 git clone https://github.com/molpopgen/libsequence.git
 ```
 
-##What is the result of cloning a repo?
+## What is the result of cloning a repo?
 You get a copy of the default "branch" of that repo.  This is usually called "master", which _should_ represent the current stable version of the code. (It may or may not correspond to the latest _tag_ or _release_ of the code. More on tags below.)
 
-##An aside: getting specific versions of projects
+## An aside: getting specific versions of projects
 
 Repositories may contain many "branches" of projects.  For example, if we clone a different repo of mine:
 
@@ -168,7 +168,7 @@ Then:
 git commit filename -m "short description of the changes"
 ```
 
-#Branches
+# Branches
 
 Branches are important:  they let you mess around with files in a way that is totally safe.  In other words, you can delete the branch if you don't like your changes.  No harm has been done, other than some time lost.
 
@@ -176,7 +176,7 @@ __The default branch is called "master"__
 
 Important point that newbies will find frustrating:  if you clone a repo from your server, __you cannot work on the master branch and push those changes back to your server!__  It is simply not allowed.  You _must_ work on a branch.  This puts a level of protection on your master branch back on the home server.  However, you __can__ push a master branch back to github.  (Yes, this is confusing, but it is what it is, so learn it now).
 
-##Creating a branch
+## Creating a branch
 
 ```
 git branch branchname
@@ -194,7 +194,7 @@ git branch -a
 git checkout branchname
 ```
 
-##Example
+## Example
 
 First, clone the repo from your server to your laptop (for example):
 
@@ -265,7 +265,7 @@ On a remote repo (your server, github, etc.):
 git push origin :branchname
 ```
 
-#Creating a specific version number for the current version of your master branch.
+# Creating a specific version number for the current version of your master branch.
 
 OK, you've done some nice work,  and you want this to be a release with a specific version number.  In git-land, you "tag" the current branch:
 
@@ -281,7 +281,7 @@ git push origin 0.1.0
 
 Once you've pushed the tag, another user can download reponame-0.1.0.tar.gz from the "Releases" tab at your repo's github URL.
 
-##When to tag?
+## When to tag?
 
 These are rules that I personally use:
 
