@@ -14,21 +14,19 @@ A "cheat sheet" on some advanced features is [here](https://github.com/tiimgreen
 
 To maximize safety of your projects, I __strongly__ suggest the following behavior:
 
-<ol>
-<li>You have a "central" server.  On that server, there is a directory called ~/git</li>
-<li>You keep all projects you care about in ~/git on that server</li>
-<li>You __NEVER__ do __ANY__ editing of code in those repos.  Rather, you always work on a _copy_ of a repo.  This is less convenient, but more idiot-proof.</li>
-</ol>
+1. You have a "central" server.  On that server, there is a directory called ~/git
+2. You keep all projects you care about in ~/git on that server
+3. You __NEVER__ do __ANY__ editing of code in those repos.  Rather, you always work on a _copy_ of a repo.  This is less convenient, but more idiot-proof.
+
 # Creating a repository on github
 
 From your account (github.com/username):
 
-<ol>
-<li>Click "Repositories"</li>
-<li>Click "New" (green button near top right of screen)</li>
-<li>Give it a name and a description</li>
-<li>Click "Create Repository"</li>
-</ol>
+
+* Click "Repositories"
+* Click "New" (green button near top right of screen)
+* Give it a name and a description
+* Click "Create Repository"
 
 You will then see something that looks like the following, and is instructions for how to create a new repo on your own server:
 
@@ -41,8 +39,8 @@ You will then see something that looks like the following, and is instructions f
 
 and this, which is how to connect an existing repo to github:
 
->git remote add origin https://github.com/molpopgen/dummy.git<br>
->git push -u origin master<br>
+> git remote add origin https://github.com/molpopgen/dummy.git<br>
+> git push -u origin master<br>
 
 The above two blocks are recipes.
 
@@ -151,7 +149,7 @@ git checkout 0.2.2
 Note: doing this will get you the code for version 0.2.2.  This is great, as it allows us to get specific versions via the command line.  However, I (as the author) will have a hard time modifying the repo and sending my changes back to github.  This feature is really for users of software, not developers.
 
 
-#Adding files
+# Adding files
 
 ```
 echo "Not much of a README" > README.md
@@ -159,7 +157,7 @@ git add README.md
 git commit README.md -m "Inadequate README added"
 ```
 
-#Committing changes to files
+# Committing changes to files
 
 Use your favorite __PLAIN TEXT__ editor.  That means __NOT__ MS Word or some RTF editor.  ___PLAIN  TEXT ONLY!!!___
 
@@ -291,7 +289,7 @@ These are rules that I personally use:
 
 Sometimes, though, you are making additions to the master branch that are unremarkable.  For example, I may make code a bit faster, simpler, or better-commented.  I usually just leave that in "master" because the _output_ that a user would see from running the code would be the same.  Eventually, master may evolve enough so that the code is quite different from the latest release, but I try to restrict myself to the tagging scenarios described above.  Sometimes, though, I forget to tag, which is why I wrote "often" in the above list.
 
-#Modifying someone else's repository
+# Modifying someone else's repository
 
 Say you want to work with someone else's code that is on github.  For example, you may have identified a bug and you know how to fix it.  This is what you do:
 
